@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Sel.SeleniumProject.GMailTest">
+      <class name="SelTests.TestNgClass">
         <methods>
-          <include name="testSendEmail"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
+          <include name="Shutdown"/>
+          <include name="testCase"/>
+          <include name="Setup"/>
         </methods>
-      </class> <!-- Sel.SeleniumProject.GMailTest -->
+      </class> <!-- SelTests.TestNgClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

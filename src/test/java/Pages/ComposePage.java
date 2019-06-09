@@ -1,65 +1,17 @@
-package Sel;
+package Pages;
 
-import java.io.File;
-import java.io.FileReader;
-import java.util.Properties;
-
-import java.util.concurrent.TimeUnit;
-
-
-
-
-import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
 
-public class GMailTest {
-	private WebDriver driver;
-	private Properties properties = new Properties();
+import Setup.DriverSetup;
 
-	@BeforeClass
-	public void setUp() throws Exception {
-		properties.load(new FileReader(
-				new File("/Users/EktaYadav/Downloads/qa-automation-selenium-java/src/test/resources/test.properties")));
+public class ComposePage extends DriverSetup{
+
 	
-		System.setProperty("webdriver.chrome.driver", properties.getProperty("webdriver.chrome.driver"));
-		driver = new ChromeDriver();
-
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-	}
-
-	@AfterClass
-	public void tearDown() throws Exception {
-		driver.quit();
-	}
-
-	@Test
-	public void testSendEmail() throws Exception {
-		driver.get("https://mail.google.com/");
-
-		// Entered username
-		WebElement userElement = driver.findElement(By.id("identifierId"));
-		userElement.sendKeys(properties.getProperty("username"));
-
-		driver.findElement(By.id("identifierNext")).click();
-
-		System.out.println("username");
-		Thread.sleep(1000);
-
-		// Entered password
-		WebElement passwordElement = driver.findElement(By.name("password"));
-		passwordElement.sendKeys(properties.getProperty("password"));
-		driver.findElement(By.id("passwordNext")).click();
-		System.out.println("password");
-
-		Thread.sleep(4000);
-
+	public void Compose() throws InterruptedException
+	{
 		WebElement composeElement = driver.findElement(By.xpath("//*[text()='Compose']"));
 		composeElement.click();
 
@@ -146,6 +98,6 @@ public class GMailTest {
 			System.out.println(i);
 		}
 
+	
 	}
-
 }

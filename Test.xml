@@ -5,7 +5,7 @@
 
  	 <test name="GmailFlow">
 		<classes>
-	        <class name="Sel.GMailTest"></class>	
+	        <class name="SelTests.TestNgClass"></class>	
 			
 		</classes>
 		
