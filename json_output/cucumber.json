@@ -1,0 +1,50 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Login",
+        "description": "",
+        "id": "gmail-login-feature;login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "comments": [
+              {
+                "line": 4,
+                "value": "#Given User has naviagted to the URL"
+              }
+            ],
+            "line": 5,
+            "name": "User has entered login credentials",
+            "match": {
+              "location": "LoginPage.user_has_entered_login_credentials()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "User will compose the email",
+            "match": {
+              "location": "ComposePage.user_will_compose_the_email()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Gmail Login Feature",
+    "description": "",
+    "id": "gmail-login-feature",
+    "keyword": "Feature",
+    "uri": "/Users/EktaYadav/Documents/workspace/SeleniumProject/Feat/test.feature"
+  }
+]

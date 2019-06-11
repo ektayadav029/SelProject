@@ -12,7 +12,7 @@
 <body>
 <h1>GmailFlow</h1>
 <p>
-  Test duration: 64.537s
+  Test duration: 39.446s
 </p>
 
 
@@ -20,30 +20,32 @@
   <table class="resultsTable">
     <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
           <tr>
-        <td colspan="3" class="group">Sel.GMailTest</td>
+        <td colspan="3" class="group">SelTests.TestNgClass</td>
       </tr>
             
 <tr>
   <td class="method">
-                  testSendEmail
+                  testCase
       </td>
   <td class="duration">
-    60.365s
+    35.490s
   </td>
   <td class="result">
         
     
         
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.ElementNotVisibleException: element not interactable<br/>
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()=&apos;Compose&apos;]&quot;}<br/>
 &nbsp; (Session info: chrome=74.0.3729.169)<br/>
 &nbsp; (Driver info: chromedriver=2.44.609545 (c2f88692e98ce7233d2df7c724465ecacfe74df5),platform=Mac OS X 10.14.4 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
 Command duration or timeout: 0 milliseconds<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;<br/>
 System info: host: &apos;Ektas-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:1082:84b4:82e7:517c%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.4&apos;, java.version: &apos;1.8.0_101&apos;<br/>
 Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609545 (c2f88692e98ce7..., userDataDir: /var/folders/42/19k7f0w12bn...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52882}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.169, webStorageEnabled: true}<br/>
-Session ID: 9a78de37172fa84b345cdf98442861ca</b></a><br />
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609545 (c2f88692e98ce7..., userDataDir: /var/folders/42/19k7f0w12bn...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:54810}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.169, webStorageEnabled: true}<br/>
+Session ID: dacbaecb7b17bff325bccee1b2285959<br/>
+*** Element info: {Using=xpath, value=//*[text()=&apos;Compose&apos;]}</b></a><br />
     <div class="stackTrace" id="exception-0">
               sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
               sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
@@ -57,9 +59,12 @@ Session ID: 9a78de37172fa84b345cdf98442861ca</b></a><br />
               org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
               org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
               org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)<br />
-              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)<br />
-              org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)<br />
-              Sel.GMailTest.testSendEmail(GMailTest.java:69)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)<br />
+              org.openqa.selenium.By$ByXPath.findElement(By.java:353)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)<br />
+              Pages.ComposePage.user_will_compose_the_email(ComposePage.java:17)<br />
+              SelTests.TestNgClass.testCase(TestNgClass.java:18)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
               sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />

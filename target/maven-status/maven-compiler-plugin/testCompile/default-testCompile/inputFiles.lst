@@ -1,1 +1,6 @@
-/Users/EktaYadav/Documents/workspace/SeleniumProject/src/test/java/Sel/GMailTest.java
+/Users/EktaYadav/Documents/workspace/SeleniumProject/src/test/java/SelTests/TestNgClass.java
+/Users/EktaYadav/Documents/workspace/SeleniumProject/src/test/java/Pages/LoginPage.java
+/Users/EktaYadav/Documents/workspace/SeleniumProject/src/test/java/SelTests/GMailCompleteTest.java
+/Users/EktaYadav/Documents/workspace/SeleniumProject/src/test/java/Setup/DriverSetup.java
+/Users/EktaYadav/Documents/workspace/SeleniumProject/src/test/java/Pages/ComposePage.java
+/Users/EktaYadav/Documents/workspace/SeleniumProject/src/test/java/SelTests/Runner.java

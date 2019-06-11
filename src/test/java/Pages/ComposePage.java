@@ -6,14 +6,16 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
 import Setup.DriverSetup;
+import cucumber.api.java.en.Then;
 
 public class ComposePage extends DriverSetup{
 
+	@Then("^User will compose the email$")
+	public void user_will_compose_the_email() throws InterruptedException {
+	    // Write code here that turns the phrase above into concrete actions
 	
-	public void Compose() throws InterruptedException
-	{
 		WebElement composeElement = driver.findElement(By.xpath("//*[text()='Compose']"));
-		composeElement.click();
+		composeElement.click();  
 
 		Thread.sleep(4000);
 

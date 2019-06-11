@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="0">
+<testcase classname="Gmail Login Feature" name="Login" time="0">
+<system-out><![CDATA[Given User has entered login credentials....................................skipped
+Then User will compose the email............................................skipped
+]]></system-out>
+</testcase>
+</testsuite>

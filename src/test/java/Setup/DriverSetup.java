@@ -7,21 +7,24 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.junit.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
+import cucumber.api.java.en.Given;
+
 public class DriverSetup {
 	public static  WebDriver driver;
 	public static Properties properties = new Properties();
 	
-	@BeforeSuite
+	@Before
 	public void Setup()
 	{
 		try {
 			properties.load(new FileReader(
-					new File("//resources/test.properties")));
+					new File("/Users/EktaYadav/Documents/workspace/SeleniumProject/resources/test.properties")));
 			
 			//Users/EktaYadav/Documents/workspace/SeleniumProject/resources/test.properties
 		} catch (FileNotFoundException e) {

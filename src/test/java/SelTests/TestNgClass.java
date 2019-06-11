@@ -14,8 +14,8 @@ public class TestNgClass extends DriverSetup {
   @Test
   public void testCase() throws InterruptedException {
 	  
-	  loginObj.Login();
-	  composeObj.Compose();
+	  loginObj.user_has_entered_login_credentials();
+	  composeObj.user_will_compose_the_email();
 	  
 	  
   }
